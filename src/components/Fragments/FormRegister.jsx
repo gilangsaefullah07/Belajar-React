@@ -1,5 +1,6 @@
 import InputForm from "../Elements/input";
 import Button from "../Elements/Button";
+import Phone from "../Elements/Input/Phone";
 
 const FormRegister = () => {
   return (
@@ -22,6 +23,12 @@ const FormRegister = () => {
         id="password"
         placeholder="****"
       ></InputForm>
+      <Phone
+        title="No. Hp"
+        type="number"
+        id="phone"
+        placeholder="081xxxxx"
+      ></Phone>
       <InputForm
         title="Konfirmasi Password"
         type="password"
