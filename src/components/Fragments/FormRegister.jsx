@@ -9,7 +9,7 @@ const FormRegister = () => {
         title="Nama Lengkap"
         type="text"
         id="fullname"
-        placeholder="example@gmail.com"
+        placeholder="contoh: Jane Cooper"
       ></InputForm>
       <InputForm
         title="Email"
@@ -21,7 +21,7 @@ const FormRegister = () => {
         title="Password"
         type="password"
         id="password"
-        placeholder="****"
+        placeholder=""
       ></InputForm>
       <Phone
         title="No. Hp"
@@ -35,7 +35,7 @@ const FormRegister = () => {
         id="confirmpassword"
         placeholder="****"
       ></InputForm>
-      <Button background="bg-blue-600" text="text-white">
+      <Button background="bg-green-500" text="text-white">
         Register
       </Button>
     </form>

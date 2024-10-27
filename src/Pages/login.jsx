@@ -8,7 +8,7 @@ const LoginPage = () => {
       <FormLogin></FormLogin>
       <div className="flex flex-row gap-1 justify-center">
         <p className="text-sm text-center">Tidak punya akun?</p>
-        <Link to="/Register" className=" text-sm font-bold text-blue-600">
+        <Link to="/Register" className=" text-sm font-bold text-green-500">
           Daftar Disini
         </Link>
       </div>

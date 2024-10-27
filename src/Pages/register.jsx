@@ -11,7 +11,7 @@ const RegisterPage = () => {
       <FormRegister></FormRegister>
       <div className="flex flex-row gap-1 justify-center">
         <p className="text-sm text-center">Sudah punya akun?</p>
-        <Link to="/Login" className=" text-sm font-bold text-blue-600">
+        <Link to="/Login" className=" text-sm font-bold text-green-500">
           Masuk Disini
         </Link>
       </div>
