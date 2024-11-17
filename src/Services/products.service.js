@@ -2,7 +2,7 @@ import axios from "axios";
 
 const getProducts = (callback) => {
   axios
-    .get("http://localhost:4000/products")
+    .get("https://67394678a3a36b5a62ee47f2.mockapi.io/api/products/products")
     .then((res) => {
       callback(res.data);
     })
