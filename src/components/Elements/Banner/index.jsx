@@ -8,7 +8,7 @@ const Banner = () => {
         backgroundRepeat: "stretch",
       }}
     >
-      <div class="flex flex-col gap-3">
+      <div className="flex flex-col gap-3">
         <div className="flex flex-col gap-2">
           <p className="w-full text-sm text-white text-center">NEWSLETTER</p>
           <p className="w-full text-2xl font-bold text-white text-center">
@@ -21,7 +21,7 @@ const Banner = () => {
         </div>
         <div className="flex p-3 gap-3 bg-white justify-between rounded-md">
           <input
-            class="w-full"
+            className="w-full"
             type="email"
             name="email_beranda"
             placeholder="Masukkan Emailmu"

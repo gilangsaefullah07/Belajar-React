@@ -2,7 +2,7 @@ import Tab from "./Tab";
 
 const ListTab = () => {
   return (
-    <ul class="flex">
+    <ul className="flex">
       <li>
         <Tab text="text-red-500" border="border-red-500" font="font-bold">
           Semua Kelas

@@ -1,61 +1,16 @@
 import Rating from "../Rating";
-
-const products = [
-  {
-    image: "../Card_1.png",
-    title: "Big 4 Auditor Financial Analyst",
-    description:
-      "Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik",
-    avatar: "../Avatar.png",
-    fullname: "Jenna Ortega",
-    position: "Senior Accountant ",
-    company: "Gojek",
-    rating: 3.5,
-    reviews: 86,
-    price: "300K",
-  },
-  {
-    image: "../Card_1.png",
-    title: "Big 4 Auditor Financial Analyst",
-    description:
-      "Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik",
-    avatar: "../Avatar.png",
-    fullname: "Jenna Ortega",
-    position: "Senior Accountant ",
-    company: "Gojek",
-    rating: 3.5,
-    reviews: 86,
-    price: "300K",
-  },
-  {
-    image: "../Card_1.png",
-    title: "Big 4 Auditor Financial Analyst",
-    description:
-      "Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik",
-    avatar: "../Avatar.png",
-    fullname: "Jenna Ortega",
-    position: "Senior Accountant ",
-    company: "Gojek",
-    rating: 3.5,
-    reviews: 86,
-    price: "300K",
-  },
-  {
-    image: "../Card_1.png",
-    title: "Big 4 Auditor Financial Analyst",
-    description:
-      "Mulai transformasi dengan instruktur profesional, harga yang terjangkau, dan kurikulum terbaik",
-    avatar: "../Avatar.png",
-    fullname: "Jenna Ortega",
-    position: "Senior Accountant ",
-    company: "Gojek",
-    rating: 3.5,
-    reviews: 86,
-    price: "300K",
-  },
-];
+import React, { useEffect, useState } from "react";
+import getProducts from "../../../Services/products.service";
 
 const Card = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    getProducts((data) => {
+      setProducts(data);
+    });
+  }, []);
+
   return (
     <div className="flex flex-col md:flex-row gap-4">
       {products.map((product, index) => (
@@ -91,14 +46,14 @@ const Card = () => {
               </div>
             </div>
           </div>
-          <div class="flex justify-between">
-            <div class="flex gap-3 items-center">
+          <div className="flex justify-between">
+            <div className="flex gap-3 items-center">
               <Rating></Rating>
-              <p class="underline underline-offset-1 text-gray-400">
+              <p className="underline underline-offset-1 text-gray-400">
                 {product.rating} ({product.reviews})
               </p>
             </div>
-            <p class="text-2xl text-green-500 font-bold">{product.price}</p>
+            <p className="text-2xl text-green-500 font-bold">{product.price}</p>
           </div>
         </div>
       ))}

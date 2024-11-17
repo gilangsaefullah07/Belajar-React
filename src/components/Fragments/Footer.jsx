@@ -33,12 +33,12 @@ const Footer = () => {
             <PageFooter>BLog</PageFooter>
           </Information>
         </div>
-        <div class="h-0.5 bg-gray-300 w-full"></div>
-        <div class="flex flex-col gap-4 md:flex-row md:justify-between">
-          <p class="text-gray-400 w-full">
+        <div className="h-0.5 bg-gray-300 w-full"></div>
+        <div className="flex flex-col gap-4 md:flex-row md:justify-between">
+          <p className="text-gray-400 w-full">
             @2023 Gerobak Sayur All Rights Reserved.
           </p>
-          <div class="flex flex-row gap-2">
+          <div className="flex flex-row gap-2">
             <SocialMedia>
               <FontAwesomeIcon
                 icon={faLinkedin}

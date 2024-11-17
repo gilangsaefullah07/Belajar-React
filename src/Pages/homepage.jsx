@@ -20,7 +20,7 @@ const Homepage = () => {
             <p className="w-full text-2xl font-bold">
               Koleksi Video Pembelajaran Unggulan
             </p>
-            <p class="w-full text-sm">
+            <p className="w-full text-sm">
               Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!
             </p>
           </div>
