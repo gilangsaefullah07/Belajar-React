@@ -12,9 +12,12 @@ const Card = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row gap-4">
+    <div className="grid grid-cols-3 gap-4">
       {products.map((product, index) => (
-        <div className="w-full flex flex-col gap-3 card bg-white rounded-md p-3">
+        <div
+          key={product.id}
+          className="w-full flex flex-col gap-3 card bg-white rounded-md p-3"
+        >
           <div className="flex row gap-3 md:flex-col">
             <img
               className="rounded-md h-[80px] w-[80px] md:w-full md:h-full"
